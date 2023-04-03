@@ -10,3 +10,10 @@
     @apply -rotate-45 -translate-y-1;
   }
 }
+
+@layer base {
+  body {
+    background-color: #141517;
+    color: #9CA2AE;
+  }
+}
