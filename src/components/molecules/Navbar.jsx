@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className={ `font-bold text-2xl cursor-pointer transition-all duration-500 ease-in flex px-7 py-[14px] items-center  
         `}>
           <div className="flex xs:font-medium ">
-              <h4 className={`ml-2 mt-2  text-sm xs:text-lg font-semibold`}>Rekun-dev</h4>
+              <h4 className={` mt-2  text-sm xs:text-lg font-semibold`}>Rekun-dev</h4>
           </div>
         </div> 
         <div onClick={()=>setOpen(!open)} className='absolute right-8 top-[1.25rem] cursor-pointer md:hidden'>

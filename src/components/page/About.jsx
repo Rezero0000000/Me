@@ -8,7 +8,7 @@ const About = () => {
     return (
         <>  
             <Navbar />
-            <section className="md:px-60 px-7 py-20">
+            <section className="md:px-60 px-5 py-20">
                 <AboutMe />
                 <TechStack />
             </section>

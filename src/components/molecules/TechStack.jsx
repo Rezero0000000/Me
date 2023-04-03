@@ -23,11 +23,11 @@ const TechStack = () => {
     ];
     return (
         <>
-            <div className="text-center mt-16 flex justify-center flex-col items-center">
-                <h1 className="text-3xl font-bold text-[#007ACC]">Technologies I've worked with :</h1>
-                <div className="grid gap-9 mt-10 grid-cols-2 ">
+            <div className="text-center mt-10 flex justify-center flex-col items-center">
+                <h1 className="text-3xl font-bold text-white border-t pt-7">Technologies I've worked with :</h1>
+                <div className="grid gap-9 mt-10 grid-cols-1 ">
                     {Links.map(tech => (
-                        <div className="bg-[#25262b] rounded-xl w-32 flex flex-col items-center justify-center py-3">
+                        <div className="bg-[#25262b] rounded-xl border border-[#323439] transition-all duration-300 hover:p-3 ease-in hover:-translate-y-2 hover:shadow-lg hover:shadow-[#42434a] w-32 flex flex-col items-center justify-center py-3">
                             <div><img src={`icons/${tech.icons}.svg`} className="w-14 h-14" alt="" /></div>
                             <p className="mt-3 font-semibold">{tech.name}</p>
                         </div>
