@@ -16,7 +16,7 @@ const Projects = () => {
     return (
         <>  
             <Navbar />
-            <section className="md:px-60 px-3">
+            <section className="md:px-60 px-3 py-20">
                 <div>
                     <h1 className="ml-3 text-3xl font-semibold">Projects</h1>
                     <div className="mt-5">

@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <>
             <Navbar />
-            <section className="md:px-60 px-10">
+            <section className="md:px-60 px-10 py-20">
                 <h1 className="text-xl font-semibold text-xl mb-3">Contact</h1>
                 <p>If you have a question, talk to me about a project collaboration or just say Hi, fill up the form below. I'll respond as soon as possible!</p>
                 <form action="" className="mt-3">
