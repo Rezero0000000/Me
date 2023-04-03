@@ -10,7 +10,7 @@ const Navbar = () => {
     let [open,setOpen]=useState(false);
 
   return (
-    <div className='w-full z-50 fixed bg-[#141517] '>
+    <div className='w-full z-50 fixed bg-[#1A1B1F] '>
       <div className={`md:flex items-center justify-between h-16 md:px-10 transition-all duration-500 ease-in ${open ?  ' shadow-lg shadow-[#141517] md:bg-transparent md:shadow-none':'shadow-none'}`}>
         <div className={ `font-bold text-2xl cursor-pointer transition-all duration-500 ease-in flex px-7 py-[14px] items-center  
         `}>

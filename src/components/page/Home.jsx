@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../molecules/Navbar";
 import Hero from "../molecules/Hero";
 
-const Discover = () => {
+const Home = () => {
   return (
     <>
     <Navbar />
@@ -11,4 +11,4 @@ const Discover = () => {
   )
 }
 
-export default Discover;
+export default Home;
