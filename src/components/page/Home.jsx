@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
     <Navbar />
-    <section>
+    <section className="h-[93vh] lg:h-[95vh]">
       <Hero />
     </section>
     <Footer />

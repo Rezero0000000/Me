@@ -11,6 +11,6 @@
   }
 
   body {
-    @apply dark:bg-white
+    @apply dark:bg-[#F3F4F6] dark:text-[#364252]
   }
 }
