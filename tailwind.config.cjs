@@ -6,10 +6,9 @@ module.exports = {
    ],
    theme: {
      extend: {
-        fontFamily: {
-          inter: 'inter',
-          opensans: "opensans"
-        }
+      fontFamily: {
+        primary: "RobotoMono",
+      },
      },
      screens : {
       // Mobile medium

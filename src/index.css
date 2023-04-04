@@ -2,15 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: RobotoMono;
+  src: url("font/RobotoMono.ttf") format("opentype");
+}
+
 @layer base {
   body {
     background-color: #141517;
     color: #9CA2AE;
-    font-family: monospace;
     overflow-x: hidden;
   }
+  
 
   body {
-    @apply dark:bg-[#F3F4F6] dark:text-[#364252]
+    @apply dark:bg-[#F3F4F6] dark:text-[#364252] font-primary
   }
 }
