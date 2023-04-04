@@ -8,23 +8,48 @@ const Navbar = () => {
       ];
 
     let [open,setOpen]=useState(false);
-
+    const genericHamburgerLine = `h-[2px] w-5 my-[3px]  bg-[#9CA2AE] transition ease transform duration-300`;
   return (
     <div className='w-full z-50 fixed bg-[#1f2025] '>
-      <div className={`md:flex items-center justify-between h-16 md:px-10 transition-all duration-500 ease-in ${open ?  ' shadow-lg shadow-[#141517] md:bg-transparent md:shadow-none':'shadow-none'}`}>
-        <div className={ `font-bold text-2xl cursor-pointer transition-all duration-500 ease-in flex px-7 py-[14px] items-center  
+      <div className={`md:flex items-center  h-16 md:px-10 transition-all duration-500 ease-in ${open ?  ' shadow-lg shadow-[#141517] md:bg-transparent md:shadow-none':'shadow-none'}`}>
+      <div className={ `font-bold text-2xl mr-20 cursor-pointer absolute hidden md:block flex py-[14px] items-center  
         `}>
-          <div className="flex xs:font-medium ">
-              <h4 className={` mt-2  text-sm xs:text-lg font-semibold`}>Rekun-dev</h4>
+          <div className="flex ">
+              <h4 className={` mt-1 text-xl `}>Rekun-dev</h4>
+              
           </div>
         </div> 
-        <div onClick={()=>setOpen(!open)} className='absolute right-8 top-[1.25rem] cursor-pointer md:hidden'>
-          <div name={open ? 'close':'menu'} className="">
-          <h1>Hi</h1>
+
+        <div onClick={()=>setOpen(!open)} className='absolute left-3 top-[0.9rem] cursor-pointer md:hidden'>
+          <div name={open ? 'close':'menu'} className="w-5 ">
+            <button className="flex flex-col h-10 w-10 rounded justify-center items-center group">
+              <div className={`${genericHamburgerLine} ${
+                open
+                    ? "rotate-[43deg] translate-y-2 opacity-50 group-hover:opacity-100"
+                    : "opacity-50 group-hover:opacity-100"
+              }`}
+              ></div>
+              <div className={`${genericHamburgerLine} ${open ? "opacity-0" : "opacity-50 group-hover:opacity-100"}`} />
+            <div className={`${genericHamburgerLine} ${
+                    open
+                        ? "-rotate-[42deg] -translate-y-2 opacity-50 group-hover:opacity-100"
+                        : "opacity-50 group-hover:opacity-100"
+                }`}
+            />
+            </button>
           </div>
         </div>
-      <ul className={`md:flex  md:items-center md:pb-0 pb-12 mx-auto absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ?  'top-14 shadow-lg shadow-[#141517] md:shadow-none md:bg-transparent bg-[#141517] ':'top-[-490px]  md:bg-transparent'}`}>
 
+        <div class="flex absolute right-3 top-[1.5rem] ">
+            <input type="checkbox" class="hidden" id="dark-toggle" />
+            <label for="dark-toggle">
+            <div class="flex h-[19px] w-8 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                <div class="toggle-circle h-[14px] w-[14px] rounded-full bg-white transition duration-300 ease-in-out"></div>
+            </div>
+            </label>
+        </div>        
+        
+      <ul className={`md:flex md:items-center md:pr-20 md:pb-0 pb-12 mx-auto absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ?  'top-14 shadow-lg shadow-[#141517] md:shadow-none md:bg-transparent bg-[#141517] ':'top-[-490px]  md:bg-transparent'}`}>
         {
           Links.map((link)=>(
             <li key={link.name} className='md:ml-8  md:my-0 xs:my-10 my-8  '>
@@ -33,12 +58,10 @@ const Navbar = () => {
           ))
         }
         <div className='md:hidden block'>
-          <a href="https://github.com/rekun-dev" className=" text-white py-[10px] px-5 rounded-md text-[11px] xs:px-6 sm:px-7">Github</a>
+          <a href="https://github.com/rekun-dev" className=" xs:text-normal text-sm">Github</a>
         </div>
       </ul>
-        <div className='hidden md:block'>
-          <a href="https://github.com/rekun-dev" className=" text-white py-[10px] px-5 rounded-full text-[11px] xs:px-6 sm:px-7 lg:px-8 lg:py-[0.55rem]">Github</a>
-        </div>
+       
       </div>
     </div>
   )

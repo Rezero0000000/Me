@@ -4,7 +4,7 @@ import Footer from "../molecules/Footer";
 
 const Projects = () => {
     let Projects = [
-        {id:0,title:"LaraBlog",description:"Sebuah blog system berbasis aplikasi web",repo:"",techs:["mysql", "php", "laravel", "tailwind"]},
+        {id:0,title:"LaraBlog", description:"Sebuah blog system berbasis aplikasi web",repo:"",techs:["mysql", "php", "laravel", "tailwind"]},
         {id:1,title:"Ingfobase",description:"Mvc web application build with php native",repo:"",techs:[ "mysql", "bootstrap","php" ]},
         {id:2,title:"Recrypt",description:"A cli apps to cryptography with classical method",repo:"",techs:["python"]},
         {id:3,title:"Trabot",description:"Landing page Travel application, with Beautiful UI",repo:"",techs:[ "javascript", "react", "tailwind", "vite"]},
@@ -30,13 +30,12 @@ const Projects = () => {
                                 <div className="flex items-center justify-between">
                                     <h1 className="font-semibold text-xl">{project.title}</h1>
                                     <div className="flex items-center">
-                                        <img src="icons/forkLight.svg" className="w-5 h-5" alt="" />
-                                        <img src="icons/linkLight.svg" className="w-6 h-6 ml-3" alt="" />
+                                        <img src="icons/forkLight.svg" className="w-5 h-5" alt="Fork" />
                                     </div>
                                 </div>
                                 <p className="mt-7 mb-4 md:text-[15px]">{project.description}</p>
                                 <ul className="flex gap-2">
-                                    {project.techs.map (tech => <li><img className="w-6 h-6" src={`icons/${tech}.svg`} alt="" /></li>)}
+                                    {project.techs.map (tech => <li><img className="w-6 h-6" src={`icons/${tech}.svg`} alt={tech.title} /></li>)}
                                 </ul>
                             </div>
                             

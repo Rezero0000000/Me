@@ -28,7 +28,7 @@ const TechStack = () => {
                 <div className=" gap-9  mt-10 flex flex-wrap justify-center md:w-11/12 w-full mx-auto">
                     {Links.map(tech => (
                         <div className="bg-[#25262b] cursor-pointer rounded-xl border border-[#323439] transition-all duration-200 hover:p-3 ease-in hover:-translate-y-2 hover:shadow-lg hover:shadow-[#42434a] w-32 flex flex-col items-center justify-center py-3">
-                            <div><img src={`icons/${tech.icons}.svg`} className="w-14 h-14" alt="" /></div>
+                            <div><img src={`icons/${tech.icons}.svg`} className="w-14 h-14" alt={tech.name} /></div>
                             <p className="mt-3 font-semibold">{tech.name}</p>
                         </div>
                     ))}
