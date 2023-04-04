@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 const Navbar = () => {
 
@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <div className='w-full z-50 fixed bg-[#1f2025] dark:shadow-lg  dark:shadow-[#e6e8ea] dark:bg-[#F3F4F6]'>
-      <div className={`md:flex items-center  h-16 md:px-10 transition-all duration-500 ease-in ${open ?  ' shadow-lg shadow-[#141517] md:bg-transparent md:shadow-none':'shadow-none'}`}>
+      <div className={`md:flex items-center  h-16 md:px-10 transition-all duration-500 ease-in ${open ?  'dark:shadow-[#e6e8ea] shadow-lg shadow-[#141517] md:bg-transparent md:shadow-none':'shadow-none'}`}>
       <div className={ `font-[700] text-2xl mr-20 cursor-pointer absolute hidden md:block flex py-[14px] items-center  
         `}>
           <div className="flex ">
@@ -65,11 +65,11 @@ const Navbar = () => {
             </label>
         </div>        
         
-      <ul className={`md:flex md:items-center md:pr-20 md:pb-0 pb-12 mx-auto absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ?  'top-14 shadow-lg shadow-[#141517] md:shadow-none md:bg-transparent bg-[#141517] ':'top-[-490px]  md:bg-transparent'}`}>
+      <ul className={`md:flex md:items-center md:pr-20 md:pb-0 pb-12 mx-auto absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ?  'top-14 shadow-lg shadow-[#141517] md:shadow-none md:bg-transparent dark:shadow-[#e6e8ea] dark:bg-[#e6e8ea] bg-[#141517] ':'top-[-490px]  md:bg-transparent'}`}>
         {
           Links.map((link)=>(
             <li key={link.name} className='md:ml-8  md:my-0 xs:my-10 my-8  '>
-              <a href={link.link} target="blank" className='duration-500 xs:text-normal text-sm'>{link.name}</a>
+              <a href={link.link}  className='duration-500 xs:text-normal text-sm'>{link.name}</a>
             </li>
           ))
         }
