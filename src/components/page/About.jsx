@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../molecules/Navbar";
 import AboutMe from "../molecules/AboutMe";
 import TechStack from "../molecules/TechStack";
+import Footer from "../molecules/Footer";
 
 
 const About = () => {
@@ -12,6 +13,7 @@ const About = () => {
                 <AboutMe />
                 <TechStack />
             </section>
+            <Footer />
         </>
     )
 }

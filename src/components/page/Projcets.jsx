@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../molecules/Navbar";
+import Footer from "../molecules/Footer";
 
 const Projects = () => {
     let Projects = [
@@ -46,6 +47,7 @@ const Projects = () => {
                     </div>
                 </div>
             </section>  
+            <Footer />
         </>
     )
 }
