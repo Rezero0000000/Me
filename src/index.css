@@ -9,4 +9,8 @@
     font-family: monospace;
     overflow-x: hidden;
   }
+
+  body {
+    @apply dark:bg-white
+  }
 }

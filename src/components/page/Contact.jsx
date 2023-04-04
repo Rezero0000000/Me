@@ -4,11 +4,11 @@ import Footer from "../molecules/Footer";
 
 const Contact = () => {
     let contacts = [
-        {name:"Facebook", url:"github.com", icons:"facebookLight"},
-        {name:"Instagram", url:"github.com", icons:"instagramLight"},
-        {name:"Linkedin", url:"github.com", icons:"linkedinLight"},
-        {name:"Github", url:"github.com", icons:"githubLight"},
-        {name:"Whatsapp", url:"github.com", icons:"whatsAppLight"},
+        {id: 0, name:"Facebook", url:"github.com", icons:"facebookLight"},
+        {id: 1, name:"Instagram", url:"github.com", icons:"instagramLight"},
+        {id: 2, name:"Linkedin", url:"github.com", icons:"linkedinLight"},
+        {id: 3, name:"Github", url:"github.com", icons:"githubLight"},
+        {id: 4, name:"Whatsapp", url:"github.com", icons:"whatsAppLight"},
     ];
 
     return (
@@ -21,7 +21,7 @@ const Contact = () => {
                     <input type="text" placeholder="Your Name" className="rounded-lg border-2 w-full shadow-[#42434a] bg-[#1A1B1F]"/>
                     <input type="text" placeholder="Your Email" className="rounded-lg border-2  w-full shadow-[#42434a] bg-[#1A1B1F] my-3" />
                     <input type="text" placeholder="Subject" className="rounded-lg border-2  w-full shadow-[#42434a] bg-[#1A1B1F] mb-3" />
-                    <textarea rows="6" placeholder="Your Message" class="border-2 py-2 px-2.5   w-full bg-[#1A1B1F]  rounded-lg shadow-md shadow-[#42434a]" name="message" id="message"></textarea>
+                    <textarea rows="6" placeholder="Your Message" className="border-2 py-2 px-2.5   w-full bg-[#1A1B1F]  rounded-lg shadow-md shadow-[#42434a]" name="message" id="message"></textarea>
                     <button className="mt-5 bg-[#42434a] hover:text-white px-5 py-1 rounded-lg ">Send</button>
                 </form>
                 <div className="mt-5">
@@ -30,7 +30,7 @@ const Contact = () => {
                     <ul className="flex gap-3 mt-2">
                     {
                         contacts.map(contact => (
-                            <li><a href={contact.url}><img src={`icons/${contact.icons}.svg`} className="w-6 h-6" alt={contact.name} /></a></li>    
+                            <li key={contact.id}><a href={contact.url}><img src={`icons/${contact.icons}.svg`} className="w-6 h-6" alt={contact.name} /></a></li>    
                         ))
                     }
                     </ul>

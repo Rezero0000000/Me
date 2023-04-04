@@ -1,5 +1,9 @@
 import React, { useState } from "react";
+import useDarkSide from "../../util/darkMode";
+
 const Navbar = () => {
+   const [darkToggle, setDarkToggle] = useState(false)
+
     let Links = [
         {name:"Home",link:"/"},
         {name:"About",link:"/about"},
@@ -16,7 +20,10 @@ const Navbar = () => {
         `}>
           <div className="flex ">
               <h4 className={` mt-1 text-xl `}>Rekun-dev</h4>
-              
+              <label class="toggleDarkBtn">
+        <input type="checkbox" onClick={() => setDarkToggle(!darkToggle)} />
+        <span class="slideBtnTg round"></span>
+      </label>
           </div>
         </div> 
 
@@ -40,11 +47,11 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div class="flex absolute right-3 top-[1.5rem] ">
-            <input type="checkbox" class="hidden" id="dark-toggle" />
-            <label for="dark-toggle">
-            <div class="flex h-[19px] w-8 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-                <div class="toggle-circle h-[14px] w-[14px] rounded-full bg-white transition duration-300 ease-in-out"></div>
+        <div className="flex absolute right-3 top-[1.5rem] ">
+            <input type="checkbox" className="hidden" id="dark-toggle" />
+            <label htmlFor="dark-toggle">
+            <div className="flex h-[19px] w-8 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                <div className="toggle-circle h-[14px] w-[14px] rounded-full bg-white transition duration-300 ease-in-out"></div>
             </div>
             </label>
         </div>        
