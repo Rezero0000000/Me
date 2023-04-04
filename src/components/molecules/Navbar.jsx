@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <div className='w-full z-50 fixed bg-[#1f2025] dark:shadow-lg  dark:shadow-[#e6e8ea] dark:bg-[#F3F4F6]'>
       <div className={`md:flex items-center  h-16 md:px-10 transition-all duration-500 ease-in ${open ?  ' shadow-lg shadow-[#141517] md:bg-transparent md:shadow-none':'shadow-none'}`}>
-      <div className={ `font-bold text-2xl mr-20 cursor-pointer absolute hidden md:block flex py-[14px] items-center  
+      <div className={ `font-[700] text-2xl mr-20 cursor-pointer absolute hidden md:block flex py-[14px] items-center  
         `}>
           <div className="flex ">
               <h4 className={` mt-1 text-xl `}>Rekun-dev</h4>
@@ -69,12 +69,12 @@ const Navbar = () => {
         {
           Links.map((link)=>(
             <li key={link.name} className='md:ml-8  md:my-0 xs:my-10 my-8  '>
-              <a href={link.link} className='duration-500 xs:text-normal text-sm'>{link.name}</a>
+              <a href={link.link} target="blank" className='duration-500 xs:text-normal text-sm'>{link.name}</a>
             </li>
           ))
         }
         <div className='md:hidden block'>
-          <a href="https://github.com/rekun-dev" className=" xs:text-normal text-sm">Github</a>
+          <a href="https://github.com/rekun-dev" target="blank" className=" xs:text-normal text-sm">Github</a>
         </div>
       </ul>
        

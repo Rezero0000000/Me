@@ -15,7 +15,7 @@ const Contact = () => {
         <>
             <Navbar />
             <section className="md:px-32 lg:px-40 px-5 py-20 md:py-24 lg:py-28 xl:px-60 ">
-                <h1 className="text-3xl md:text-4xl font-semibold mt-7 mb-3">Contact</h1>
+                <h1 className="text-3xl md:text-4xl font-[600] mt-7 mb-3">Contact</h1>
                 <div className="mt-3  border-b-2 border-dashed border-slate-400"></div>
                 <form action="" className="mt-10 ">
                     <input type="text" placeholder="Your Name" className="rounded-lg border-2 md:text-[14px] text-[12px] w-full shadow-[#42434a] dark:bg-[#F3F4F6] bg-[#1A1B1F]"/>
@@ -25,12 +25,12 @@ const Contact = () => {
                     <button className="mt-5 dark:text-white text-[14px] bg-[#42434a] hover:dark:text-[#364252] hover:dark:bg-[#F3F4F6] dark:hover:border hover:dark:border-[#42434a] hover:text-white px-6  py-2 rounded-lg ">Send</button>
                 </form>
                 <div className="mt-7">
-                    <h1 className="text-3xl md:text-4xl font-semibold  mb-3">Follow Me</h1>
+                    <h1 className="text-3xl md:text-4xl font-[600]  mb-3">Follow Me</h1>
                     <div className="mt-3  border-b-2 border-dashed border-slate-400"></div>
                     <ul className="flex gap-3 mt-2">
                     {
                         contacts.map(contact => (
-                            <li key={contact.id}><a href={contact.url}><img src={`icons/${contact.icons}.svg`} className="w-6 h-6" alt={contact.name} /></a></li>    
+                            <li key={contact.id}><a href={contact.url} target="blank"> <img src={`icons/${contact.icons}.svg`} className="w-6 h-6" alt={contact.name} /></a></li>    
                         ))
                     }
                     </ul>
