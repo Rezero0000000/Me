@@ -9,7 +9,7 @@ const Hero = () => {
             <div className="sm:ml-10 xs:text-center sm:text-left md:text-left">
                 <h1 className="text-base font-semibold text-primary md:text-xl mt-10 md:mt-0">Hello 👋, I'm <span className="mt-1 block text-4xl font-bold text-dark dark:text-[#364252] lg:text-5xl">Rekun-dev</span></h1>
                 <h2 className="mb-5 text-sm font-medium font-RobotoMono">Web Developer</h2>
-                <p className="mb-10 font-medium xs:px-7 sm:px-0 leading-relaxed text-secondary ">A Computer Science student, Tech Enthuasiast. Welcome to my Portfolio Website, Things I've created, and anything else that i want to show the <span className="font-bold text-dark dark:text-white">World</span></p>
+                <p className="mb-10 font-medium xs:px-7 sm:px-0 leading-relaxed text-secondary font-RobotoMono">A Computer Science student, Tech Enthuasiast. Welcome to my Portfolio Website, Things I've created, and anything else that i want to show the <span className="font-bold text-dark dark:text-white">World</span></p>
 
                 <div className="buttons mt-7">
                         <a href="#" className="px-5 py-3 border rounded-lg bg-[#F3F4F6] text-[#141517] hover:border-slate-400 shadow-lg hover:bg-[#1A1B1F] hover:text-slate-200 hover:border" target="blank">Follow Me</a>

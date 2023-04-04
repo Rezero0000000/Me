@@ -16,6 +16,6 @@
   
 
   body {
-    @apply dark:bg-[#F3F4F6] dark:text-[#364252] font-primary
+    @apply dark:bg-[#F3F4F6] dark:text-[#364252];
   }
 }
