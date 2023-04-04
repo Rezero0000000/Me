@@ -13,8 +13,8 @@ const Contact = () => {
     return (
         <>
             <Navbar />
-            <section className="md:px-60 px-5 py-20">
-                <h1 className="text-3xl font-semibold mt-7 mb-3">Contact</h1>
+            <section className="md:px-32 lg:px-40 px-5 py-20 md:py-24 lg:py-28 xl:px-60 md:text-[15px]">
+                <h1 className="text-3xl md:text-4xl font-semibold mt-7 mb-3">Contact</h1>
                 <div className="mt-3  border-b-2 border-dashed border-slate-400"></div>
                 <form action="" className="mt-10">
                     <input type="text" placeholder="Your Name" className="rounded-lg border-2 w-full shadow-[#42434a] bg-[#1A1B1F]"/>
@@ -24,7 +24,7 @@ const Contact = () => {
                     <button className="mt-5 bg-[#42434a] hover:text-white px-5 py-1 rounded-lg ">Send</button>
                 </form>
                 <div className="mt-5">
-                    <h1 className="text-3xl font-semibold  mb-3">Follow Me</h1>
+                    <h1 className="text-3xl md:text-4xl font-semibold  mb-3">Follow Me</h1>
                     <div className="mt-3  border-b-2 border-dashed border-slate-400"></div>
                     <ul className="flex gap-3 mt-2">
                     {
