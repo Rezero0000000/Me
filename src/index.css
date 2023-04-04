@@ -10,6 +10,6 @@
   }
 
   body {
-    @apply font- dark:bg-[#F3F4F6] dark:text-[#364252]
+    @apply font-roboto-mono dark:bg-[#F3F4F6] dark:text-[#364252]
   }
 }
