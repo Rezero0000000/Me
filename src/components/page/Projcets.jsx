@@ -19,7 +19,7 @@ const Projects = () => {
             <Navbar />
             <section className="md:px-32 lg:px-40 px-5 py-24 md:py-24 lg:py-28 xl:px-60">
                 <div>
-                    <h1 className="text-3xl md:text-4xl font-[600]">Projects</h1>
+                    <strong><h1 className="text-3xl md:text-4xl ">Projects</h1></strong>
                     <div className="mt-3  border-b-2 border-dashed border-slate-400"></div>
                     <p className="text-[12px] md:text-sm mt-2">List of my projects, I hope that I can create usefull app/software to many people 😁😎😀.</p>
                     <div className="mt-10 md:grid md:grid-cols-2 md:gap-5">
@@ -28,7 +28,7 @@ const Projects = () => {
                         <div className="bg-[#1A1B1F] p-5 rounded-lg mt-10 border border-[#323439] transition-all duration-200 hover:bg-[#323439] ease-in hover:-translate-y-2 dark:bg-[#F3F4F6] hover:dark:shadow-lg hover:dark:shadow-[#cbcdd0]" key={project.id}>
                             <div>
                                 <div className="flex items-center justify-between">
-                                    <h1 className="font-[600] text-xl">{project.title}</h1>
+                                    <strong><h1 className="text-xl">{project.title}</h1></strong>
                                     <div className="flex items-center">
                                         <a href={project.repo} target="blank">
                                             <img src="icons/forkLight.svg" className="w-5 h-5" alt="Fork" />
