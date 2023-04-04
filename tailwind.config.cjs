@@ -7,7 +7,7 @@ module.exports = {
    theme: {
      extend: {
       fontFamily: {
-        primary: "RobotoMono",
+        primary: ["RobotoMono", "monospace"],
       },
      },
      screens : {
