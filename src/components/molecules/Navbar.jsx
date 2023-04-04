@@ -1,8 +1,6 @@
-import React, { useState } from "react";
-import useDarkSide from "../../util/darkMode";
+import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
-   const [darkToggle, setDarkToggle] = useState(false)
 
     let Links = [
         {name:"Home",link:"/"},
@@ -13,6 +11,20 @@ const Navbar = () => {
 
     let [open,setOpen]=useState(false);
     const genericHamburgerLine = `h-[2px] w-5 my-[3px]  bg-[#9CA2AE] transition ease transform duration-300`;
+    
+    let [lightMode,setLightMode]=useState(false);
+      
+    function changeMode () {
+      if (lightMode) {
+        localStorage.setItem("theme", "light");
+        window.document.documentElement.classList.remove("dark");
+      } else {
+        localStorage.setItem("theme", "dark");
+        window.document.documentElement.classList.add("dark");
+      }
+      setLightMode(!lightMode);
+    }
+
   return (
     <div className='w-full z-50 fixed bg-[#1f2025] '>
       <div className={`md:flex items-center  h-16 md:px-10 transition-all duration-500 ease-in ${open ?  ' shadow-lg shadow-[#141517] md:bg-transparent md:shadow-none':'shadow-none'}`}>
@@ -20,10 +32,7 @@ const Navbar = () => {
         `}>
           <div className="flex ">
               <h4 className={` mt-1 text-xl `}>Rekun-dev</h4>
-              <label class="toggleDarkBtn">
-        <input type="checkbox" onClick={() => setDarkToggle(!darkToggle)} />
-        <span class="slideBtnTg round"></span>
-      </label>
+              
           </div>
         </div> 
 
@@ -48,10 +57,10 @@ const Navbar = () => {
         </div>
 
         <div className="flex absolute right-3 top-[1.5rem] ">
-            <input type="checkbox" className="hidden" id="dark-toggle" />
+            <input type="checkbox" className="hidden" id="dark-toggle" onClick={changeMode}/>
             <label htmlFor="dark-toggle">
             <div className="flex h-[19px] w-8 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-                <div className="toggle-circle h-[14px] w-[14px] rounded-full bg-white transition duration-300 ease-in-out"></div>
+                <div className={`toggle-circle h-[14px] w-[14px] rounded-full bg-white transition duration-300 ease-in-out ${lightMode ? "translate-x-[0.6rem]":""}`}></div>
             </div>
             </label>
         </div>        
