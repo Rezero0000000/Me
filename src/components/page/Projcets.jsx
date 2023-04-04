@@ -35,7 +35,7 @@ const Projects = () => {
                                         </a>
                                     </div>
                                 </div>
-                                <p className="mt-7 mb-4 md:text-[15px]">{project.description}</p>
+                                <p className="mt-7 mb-4 md:text-[14px] text-[12px]">{project.description}</p>
                                 <ul className="flex gap-2">
                                     {project.techs.map ((tech, index) => <li key={index}><img className="w-6 h-6" src={`icons/${tech}.svg`} alt={tech.title} /></li>)}
                                 </ul>

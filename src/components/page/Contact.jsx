@@ -14,15 +14,15 @@ const Contact = () => {
     return (
         <>
             <Navbar />
-            <section className="md:px-32 lg:px-40 px-5 py-20 md:py-24 lg:py-28 xl:px-60 md:text-[15px]">
+            <section className="md:px-32 lg:px-40 px-5 py-20 md:py-24 lg:py-28 xl:px-60 ">
                 <h1 className="text-3xl md:text-4xl font-semibold mt-7 mb-3">Contact</h1>
                 <div className="mt-3  border-b-2 border-dashed border-slate-400"></div>
-                <form action="" className="mt-10">
-                    <input type="text" placeholder="Your Name" className="rounded-lg border-2 w-full shadow-[#42434a] dark:bg-[#F3F4F6] bg-[#1A1B1F]"/>
-                    <input type="text" placeholder="Your Email" className="rounded-lg border-2  w-full shadow-[#42434a] dark:bg-[#F3F4F6] bg-[#1A1B1F] my-3" />
-                    <input type="text" placeholder="Subject" autoComplete="off" className="rounded-lg border-2  w-full shadow-[#42434a] dark:bg-[#F3F4F6] bg-[#1A1B1F] mb-3" />
-                    <textarea rows="6" placeholder="Your Message" className="border-2 py-2 px-2.5 dark:bg-[#F3F4F6] dark:shadow-none  w-full bg-[#1A1B1F]  rounded-lg shadow-md shadow-[#42434a]" name="message" id="message"></textarea>
-                    <button className="mt-5 dark:text-white bg-[#42434a] hover:dark:text-[#364252] hover:dark:bg-[#F3F4F6] dark:hover:border hover:dark:border-[#42434a] hover:text-white px-5 text-lg py-1 rounded-lg ">Send</button>
+                <form action="" className="mt-10 ">
+                    <input type="text" placeholder="Your Name" className="rounded-lg border-2 md:text-[14px] text-[12px] w-full shadow-[#42434a] dark:bg-[#F3F4F6] bg-[#1A1B1F]"/>
+                    <input type="text" placeholder="Your Email" className="rounded-lg border-2 md:text-[14px] text-[12px]  w-full shadow-[#42434a] dark:bg-[#F3F4F6] bg-[#1A1B1F] my-3" />
+                    <input type="text" placeholder="Subject" autoComplete="off" className="rounded-lg border-2 md:text-[14px] text-[12px]  w-full shadow-[#42434a] dark:bg-[#F3F4F6] bg-[#1A1B1F] mb-3" />
+                    <textarea rows="6" placeholder="Your Message" className="border-2 md:text-[14px] text-[12px] py-2 px-2.5 dark:bg-[#F3F4F6] dark:shadow-none  w-full bg-[#1A1B1F]  rounded-lg shadow-md shadow-[#42434a]" name="message" id="message"></textarea>
+                    <button className="mt-5 dark:text-white text-[14px] bg-[#42434a] hover:dark:text-[#364252] hover:dark:bg-[#F3F4F6] dark:hover:border hover:dark:border-[#42434a] hover:text-white px-6  py-2 rounded-lg ">Send</button>
                 </form>
                 <div className="mt-7">
                     <h1 className="text-3xl md:text-4xl font-semibold  mb-3">Follow Me</h1>

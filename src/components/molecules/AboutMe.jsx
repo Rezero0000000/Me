@@ -2,7 +2,7 @@ import React from "react";
 const AboutMe = () => {
     return (
         <>
-            <div className="md:text-[15px]">
+            <div className="md:text-[14px] text-[12.5px]">
                 <h1 className="text-3xl md:text-4xl font-semibold ">About Me</h1>
                 <div className="mt-3 mb-7 border-b-2 border-dashed border-slate-400"></div>
 
@@ -12,7 +12,7 @@ const AboutMe = () => {
             <div className="mt-10">
                 <h1 className="text-2xl lg:text-3xl font-semibold mb-5">What I'm Doing Now</h1>
                 <div className="mt-3 mb-7 border-b-2 border-dashed border-slate-400"></div>
-                <ul className="list-disc ml-5 md:text-[15px]">
+                <ul className="list-disc ml-5 md:text-[14px] text-[12.5px]">
                     <li>Enjoying Life. exactly</li>
                     <li>Go to College</li>
                     <li>Learn to be more productive</li>
