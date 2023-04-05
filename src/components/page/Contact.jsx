@@ -32,10 +32,10 @@ const Contact = () => {
 
     let contacts = [
         {id: 0, name:"Facebook", url:"github.com", icons:"facebookLight"},
-        {id: 1, name:"Instagram", url:"github.com", icons:"instagramLight"},
+        {id: 1, name:"Instagram", url:"https://intagram.com/rekun.dev", icons:"instagramLight"},
         {id: 2, name:"Linkedin", url:"github.com", icons:"linkedinLight"},
-        {id: 3, name:"Github", url:"github.com", icons:"githubLight"},
-        {id: 4, name:"Whatsapp", url:"github.com", icons:"whatsAppLight"},
+        {id: 3, name:"Github", url:"https://github.com/Rekun-dev", icons:"githubLight"},
+        {id: 4, name:"Whatsapp", url:"Wa.me/+6287741174222", icons:"whatsAppLight"},
     ];
 
     return (
@@ -45,10 +45,10 @@ const Contact = () => {
                 <strong><h1 className="text-2xl md:text-3xl mt-7 mb-3">Contact</h1></strong>
                 <div className="mt-3  border-b-2 border-dashed border-slate-400"></div>
                 <form action="" className="mt-10" onSubmit={submitHandler}>
-                    <input value={formState.name || ''} onChange={changeHandler} name="name" type="text" placeholder="Your Name" className="rounded-lg border-2 md:text-[14px] text-[12px] w-full shadow-[#42434a] dark:bg-[#F3F4F6] bg-[#1A1B1F]"/>
-                    <input value={formState.email || ''} onChange={changeHandler} name="email"  type="email" placeholder="Your Email" className="rounded-lg border-2 md:text-[14px] text-[12px]  w-full shadow-[#42434a] dark:bg-[#F3F4F6] bg-[#1A1B1F] my-3" />
-                    <input value={formState.subject || ''} onChange={changeHandler} name="subject"  type="text" placeholder="Subject" autoComplete="off" className="rounded-lg border-2 md:text-[14px] text-[12px]  w-full shadow-[#42434a] dark:bg-[#F3F4F6] bg-[#1A1B1F] mb-3" />
-                    <textarea value={formState.message || ''} onChange={changeHandler} rows="6" placeholder="Your Message" className="border-2 md:text-[14px] text-[12px] py-2 px-2.5 dark:bg-[#F3F4F6] dark:shadow-none  w-full bg-[#1A1B1F]  rounded-lg shadow-md shadow-[#42434a]" name="message" id="message"></textarea>
+                    <input value={formState.name || ''} autoComplete="off" onChange={changeHandler} name="name" type="text" placeholder="Your Name" className="rounded-lg border-2 md:text-[14px] text-[12px] w-full shadow-[#42434a] dark:bg-[#F3F4F6] bg-[#1A1B1F]"/>
+                    <input value={formState.email || ''} autoComplete="off" onChange={changeHandler} name="email"  type="email" placeholder="Your Email" className="rounded-lg border-2 md:text-[14px] text-[12px]  w-full shadow-[#42434a] dark:bg-[#F3F4F6] bg-[#1A1B1F] my-3" />
+                    <input value={formState.subject || ''} autoComplete="off" onChange={changeHandler} name="subject"  type="text" placeholder="Subject"  className="rounded-lg border-2 md:text-[14px] text-[12px]  w-full shadow-[#42434a] dark:bg-[#F3F4F6] bg-[#1A1B1F] mb-3" />
+                    <textarea value={formState.message || ''} autoComplete="off" onChange={changeHandler} rows="6" placeholder="Your Message" className="border-2 md:text-[14px] text-[12px] py-2 px-2.5 dark:bg-[#F3F4F6] dark:shadow-none  w-full bg-[#1A1B1F]  rounded-lg shadow-md shadow-[#42434a]" name="message" id="message"></textarea>
                     <button className="mt-5 dark:text-white text-[14px] bg-[#42434a] hover:dark:text-[#364252] hover:dark:bg-[#F3F4F6] dark:hover:border hover:dark:border-[#42434a] hover:text-white px-6  py-2 rounded-lg ">Send</button>
                 </form>
                 <div className="mt-7">

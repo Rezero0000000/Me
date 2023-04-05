@@ -4,7 +4,7 @@ import Footer from "../molecules/Footer";
 
 const Projects = () => {
     let Projects = [
-        {id:0,title:"LaraBlog", description:"Sebuah blog system berbasis aplikasi web",repo:"https://github.com/Rekun-dev/larablog",techs:["mysql", "php", "laravel", "tailwind"]},
+        {id:0,title:"LaraBlog", description:"A blog system made with Laravel",repo:"https://github.com/Rekun-dev/larablog",techs:["mysql", "php", "laravel", "tailwind"]},
         {id:1,title:"Ingfobase",description:"Mvc web application build with php native",repo:"https://github.com/Rekun-dev/ingfobase",techs:[ "mysql", "bootstrap","php" ]},
         {id:2,title:"Recrypt",description:"A cli apps to cryptography with classical method",repo:"https://github.com/Rekun-dev/recrypt",techs:["python"]},
         {id:3,title:"Trabot",description:"Landing page Travel application, with Beautiful UI",repo:"https://github.com/Rekun-dev/trabot",techs:[ "javascript", "react", "tailwind", "vite"]},

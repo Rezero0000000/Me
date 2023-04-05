@@ -18,7 +18,7 @@ const TechStack = () => {
         {id: 12, name:"Npm",icons:"npm"},
         {id: 13, name:"Mysql",icons:"mysql"},
         {id: 14, name:"Git",icons:"git"},
-        {id: 15, name:"Github",icons:"github"},
+        {id: 15, name:"Github",icons:"githubLight"},
         {id: 16, name:"Vite",icons:"vite"},
     ];
     return (
