@@ -22,7 +22,7 @@ const Projects = () => {
                     <strong><h1 className="text-3xl md:text-4xl ">Projects</h1></strong>
                     <div className="mt-3  border-b-2 border-dashed border-slate-400"></div>
                     <p className="text-[12px] md:text-sm mt-2">List of my projects, I hope that I can create usefull app/software to many people 😁😎😀.</p>
-                    <div className="mt-10 md:grid md:grid-cols-2 md:gap-5">
+                    <article className="mt-10 md:grid md:grid-cols-2 md:gap-5">
                     {
                     Projects.map(project => (
                         <div className="bg-[#1A1B1F] p-5 rounded-lg mt-10 border border-[#323439] transition-all duration-200 hover:bg-[#323439] ease-in hover:-translate-y-2 dark:bg-[#F3F4F6] hover:dark:shadow-lg hover:dark:shadow-[#cbcdd0]" key={project.id}>
@@ -31,13 +31,13 @@ const Projects = () => {
                                     <strong><h1 className="text-xl">{project.title}</h1></strong>
                                     <div className="flex items-center">
                                         <a href={project.repo} target="blank">
-                                            <img src="icons/forkLight.svg" className="w-5 h-5" alt="Fork" />
+                                            <img loading="lazy" src="icons/forkLight.svg" className="w-5 h-5" alt="Fork" />
                                         </a>
                                     </div>
                                 </div>
                                 <p className="mt-7 mb-4 md:text-[14px] text-[12px]">{project.description}</p>
                                 <ul className="flex gap-2">
-                                    {project.techs.map ((tech, index) => <li key={index}><img className="w-6 h-6" src={`icons/${tech}.svg`} alt={tech.title} /></li>)}
+                                    {project.techs.map ((tech, index) => <li key={index}><img loading="lazy" className="w-6 h-6" src={`icons/${tech}.svg`} alt={tech.title} /></li>)}
                                 </ul>
                             </div>
                             
@@ -45,7 +45,7 @@ const Projects = () => {
                         
                     ))
                     }
-                    </div>
+                    </article>
                 </div>
             </section>  
             <Footer />

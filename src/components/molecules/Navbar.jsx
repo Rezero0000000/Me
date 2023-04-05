@@ -10,7 +10,7 @@ const Navbar = () => {
       ];
 
     let [open,setOpen]=useState(false);
-    const genericHamburgerLine = `h-[2px] w-5 my-[3px]  bg-[#9CA2AE] transition ease transform duration-300`;
+    const genericHamburgerLine = `h-[2px] w-5 my-[3px] bg-[#9CA2AE] transition ease transform duration-300`;
     
     
     let [lightMode,setLightMode]=useState(false);
@@ -26,7 +26,7 @@ const Navbar = () => {
     }
 
   return (
-    <div className='w-full z-50 fixed bg-[#1f2025] dark:shadow-lg  dark:shadow-[#e6e8ea] dark:bg-[#F3F4F6]'>
+    <nav className='w-full z-50 fixed bg-[#1f2025] dark:shadow-lg  dark:shadow-[#e6e8ea] dark:bg-[#F3F4F6]'>
       <div className={`md:flex items-center  h-16 md:px-10 transition-all duration-500 ease-in ${open ?  'dark:shadow-[#e6e8ea] shadow-lg shadow-[#141517] md:bg-transparent md:shadow-none':'shadow-none'}`}>
       <div className={ `font-[700] text-2xl mr-20 cursor-pointer absolute hidden md:block flex py-[14px] items-center  
         `}>
@@ -79,7 +79,7 @@ const Navbar = () => {
       </ul>
        
       </div>
-    </div>
+    </nav>
   )
 }
 

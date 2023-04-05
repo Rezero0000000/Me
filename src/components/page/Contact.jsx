@@ -57,7 +57,7 @@ const Contact = () => {
                     <ul className="flex gap-3 mt-2">
                     {
                         contacts.map(contact => (
-                            <li key={contact.id}><a href={contact.url} target="blank"> <img src={`icons/${contact.icons}.svg`} className="w-6 h-6" alt={contact.name} /></a></li>    
+                            <li key={contact.id}><a href={contact.url} target="blank"> <img loading="lazy" src={`icons/${contact.icons}.svg`} className="w-6 h-6" alt={contact.name} /></a></li>    
                         ))
                     }
                     </ul>

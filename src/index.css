@@ -13,7 +13,6 @@
     color: #9CA2AE;
     overflow-x: hidden;
   }
-  
 
   body {
     @apply dark:bg-[#F3F4F6] dark:text-[#364252] font-RobotoMono;

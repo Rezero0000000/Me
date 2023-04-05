@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
     <Navbar />
-    <section className="h-[93vh] lg:h-[95vh]">
+    <section className="h-[93vh] lg:h-[95vh] bg-scrol">
       <Hero />
     </section>
     <Footer />
