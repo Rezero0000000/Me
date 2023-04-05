@@ -21,7 +21,7 @@ const Projects = () => {
                 <div>
                     <strong><h1 className="text-3xl md:text-4xl ">Projects</h1></strong>
                     <div className="mt-3  border-b-2 border-dashed border-slate-400"></div>
-                    <p className="text-[12px] md:text-sm mt-2">List of my projects, I hope that I can create usefull app/software to many people 😁😎😀.</p>
+                    <p className="text-[12px] md:text-sm mt-2">List of my projects, I hope that I can create usefull app/software for many people 😁😎😀.</p>
                     <article className="mt-10 md:grid md:grid-cols-2 md:gap-5">
                     {
                     Projects.map(project => (
