@@ -1,3 +1,3 @@
 # MYSITE
 
-My personal web portfolio
+My personal web portfolio built with nodejs and reactjs
