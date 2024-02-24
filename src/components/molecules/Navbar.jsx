@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className={ `font-[700] text-2xl mr-20 cursor-pointer absolute hidden md:block flex py-[14px] items-center  
         `}>
           <div className="flex ">
-              <h4 className={` mt-1 text-xl `}>Rekun-dev</h4>
+              <h4 className={` mt-1 text-xl `}>Rehan-dev</h4>
               
           </div>
         </div> 

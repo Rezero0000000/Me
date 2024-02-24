@@ -31,9 +31,9 @@ const Contact = () => {
     }
 
     let contacts = [
-        {id: 0, name:"Instagram", url:"https://instagram.com/rekun.dev", icons:"instagramLight"},
+        {id: 0, name:"Instagram", url:"https://instagram.com/", icons:"instagramLight"},
         {id: 1, name:"Linkedin", url:"https://www.linkedin.com/in/muhammad-raihan-alifiandra-380509271/", icons:"linkedinLight"},
-        {id: 2, name:"Github", url:"https://github.com/Rekun-dev", icons:"githubLight"},
+        {id: 2, name:"Github", url:"https://github.com/rezero00000", icons:"githubLight"},
         {id: 3, name:"Whatsapp", url:"Wa.me/+6287741174222", icons:"whatsAppLight"},
     ];
 

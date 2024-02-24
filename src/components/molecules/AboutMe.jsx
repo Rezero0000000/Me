@@ -15,7 +15,7 @@ const AboutMe = () => {
                     <li>Enjoying Life. exactly</li>
                     <li>Going to College</li>
                     <li>Learning to be more productive</li>
-                    <li>Learning C, Python, and web game devlopment with javascript </li>
+                    <li>Learning low level programming with C and C++ and Embedded system</li>
                 </ul>
             </article>
         </>
