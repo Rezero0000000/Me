@@ -1,0 +1,16 @@
+<main>
+    <section  class="md:px-20  md:text-[15px] sm:py-36 sm:px-10 lg:px-40 px-5 py-24 md:py-48 lg:py-60 xl:px-60 ">
+        <div class="flex flex-col items-center pt-5 mx-auto w-full sm:flex-row sm:justify-around sm:w-auto sm:pt-8">
+         <article class="sm:ml-10 xs:text-center sm:text-left md:text-left">
+             <h1 class="text-base font-[600] text-primary md:text-xl mt-10 md:mt-0">Hello 👋, I'm <span class="mt-1 block text-4xl font-[700] text-white dark:text-[#364252] lg:text-5xl">Rezero0000000</span></h1>
+             <h2 class="mb-5 text-[12px] font-medium font-RobotoMono">Web Developer</h2>
+             <p class="mb-10 font-medium text-[14px] xs:px-7 sm:px-0 leading-relaxed text-secondary font-RobotoMono">A Computer Science student, Tech Enthuasiast. Welcome to my Portfolio Website, Things I've created, and anything else that i want to show the <span class="font-[700] text-dark dark:text-white">World</span></p>
+
+             <div class="buttons mt-7">
+                     <a href="/contact" class="px-5 py-3 border rounded-lg bg-[#F3F4F6] text-[#141517] hover:border-slate-400 shadow-lg hover:bg-[#1A1B1F] hover:text-slate-200 hover:border" target="blank">Follow Me</a>
+                     <a href="https://github.com/Rekun-dev" target="blank" class="px-5 py-3 bg-[#1A1B1F] text-slate-200 rounded-lg shadow-lg ml-3 hover:bg-[#F3F4F6] hover:text-black hover:border hover:border-slate-200">Github</a>
+             </div>
+         </article>
+       </div>
+    </section>
+</main>

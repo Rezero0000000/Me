@@ -1,6 +1,10 @@
+<script>
+    import Hero from "../components/Hero.svelte"
+</script>
 
 <main>
-    <div>
-        <h1>HAHAHA Home</h1>
-  </main>
+    <section class="h-[93vh] lg:h-[95vh] bg-scrol">
+      <Hero />
+    </section>
+</main>
   
