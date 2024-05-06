@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Router, Link, Route } from "svelte-routing";
+  import { Router, Route } from "svelte-routing";
   import Home from "./page/Home.svelte";
   import Contact from "./page/Contact.svelte";
   import Project from "./page/Project.svelte";
@@ -12,12 +12,6 @@ import Footer from "./components/Footer.svelte";
 
 <Router {url}>
 <Navbar />
-  <!-- <nav>
-    <Link to="/">Home</Link>
-    <Link to="/contact">About</Link>
-    <Link to="/project">About</Link>
-    <Link to="/about">About</Link>
-  </nav> -->
   <main>
     <Route path="/" component={Home} />
     <Route path="/contact" component={Contact} />

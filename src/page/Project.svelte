@@ -30,12 +30,12 @@
                     </div>
                     <p class="mt-7 mb-4 md:text-[14px] text-[12px]">{project.description}</p>
                     <ul class="flex gap-2">
-                        <!-- {project.techs.map ((tech, index) => <li key={index}><img loading="lazy" class="w-6 h-6" src={`icons/${tech}.svg`} alt={tech.title} /></li>)} -->
+                        {#each project.techs as tech}
+                         <li><img loading="lazy" class="w-6 h-6" src={`icons/${tech}.svg`} alt={tech} /></li>
+                        {/each}
                     </ul>
                 </div>
-                
             </div>
-            
         {/each}
         </article>
     </div>
