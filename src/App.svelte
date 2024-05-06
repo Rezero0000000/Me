@@ -21,10 +21,8 @@ import Footer from "./components/Footer.svelte";
   <main>
     <Route path="/" component={Home} />
     <Route path="/contact" component={Contact} />
-    <Route path="/project" component={Project} />
+    <Route path="/projects" component={Project} />
     <Route path="/about" component={About} />
   </main>
-
   <Footer />
-
 </Router>

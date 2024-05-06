@@ -11,3 +11,32 @@
     ];
 </script>
 
+<section class="md:px-32 lg:px-40 px-5 py-24 md:py-24 lg:py-28 xl:px-60">
+    <div>
+        <strong><h1 class="text-3xl md:text-4xl ">Projects</h1></strong>
+        <div class="mt-3  border-b-2 border-dashed border-slate-400"></div>
+        <p class="text-[12px] md:text-sm mt-2">List of my projects, I hope that I can create usefull app/software for many people 😁😎😀.</p>
+        <article class="mt-10 md:grid md:grid-cols-2 md:gap-5">
+        {#each Projects as project}
+            <div class="bg-[#1A1B1F] p-5 rounded-lg mt-10 border border-[#323439] transition-all duration-200 hover:bg-[#323439] ease-in hover:-translate-y-2 dark:bg-[#F3F4F6] hover:dark:shadow-lg hover:dark:shadow-[#cbcdd0]" >
+                <div>
+                    <div class="flex items-center justify-between">
+                        <strong><h1 class="text-xl">{project.title}</h1></strong>
+                        <div class="flex items-center">
+                            <a href={project.repo} target="blank">
+                                <img loading="lazy" src="icons/forkLight.svg" class="w-5 h-5" alt="Fork" />
+                            </a>
+                        </div>
+                    </div>
+                    <p class="mt-7 mb-4 md:text-[14px] text-[12px]">{project.description}</p>
+                    <ul class="flex gap-2">
+                        <!-- {project.techs.map ((tech, index) => <li key={index}><img loading="lazy" class="w-6 h-6" src={`icons/${tech}.svg`} alt={tech.title} /></li>)} -->
+                    </ul>
+                </div>
+                
+            </div>
+            
+        {/each}
+        </article>
+    </div>
+</section> 
